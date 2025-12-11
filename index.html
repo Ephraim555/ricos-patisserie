@@ -167,15 +167,15 @@
 
   <section class="section" id="order">
     <h2>Place Your Order</h2>
-    <form class="order-form" action="https://formspree.io/f/mkgdpnqk" method="POST">
+    <form class="order-form" action="https://hook.eu1.make.com/6l7e1kgpi4sgsqh3eeksfayp5c674uyl" method="POST">
       <label>Your Name</label>
-      <input type="text" placeholder="Enter your full name" required />
+      <input type="text" name="name" placeholder="Enter your full name" required />
 
       <label>Phone Number</label>
-      <input type="tel" placeholder="Enter phone number" required />
+      <input type="tel" name="phone_number" placeholder="Enter phone number" required />
 
       <label>Select Item</label>
-      <select required>
+      <select name="options" required>
         <option value="">Choose an item...</option>
         <option>Chocolate Cake</option>
         <option>Vanilla Cupcake</option>
@@ -184,10 +184,10 @@
       </select>
 
       <label>Quantity</label>
-      <input type="number" min="1" placeholder="Enter quantity" required />
+      <input type="number" min="1" name="quantity" placeholder="Enter quantity" required />
 
       <label>Additional Notes</label>
-      <textarea placeholder="Describe customizations or notes..."></textarea>
+      <textarea name="Notes" placeholder="Anything else you want us to know?..."></textarea>
 
       <button type="submit">Submit Order</button>
     </form>
@@ -207,4 +207,5 @@
   </footer>
 </body>
 </html>
+
 
